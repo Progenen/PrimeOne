@@ -1,14 +1,14 @@
-  
-let menu = document.querySelector('.burger-menu');
-let mb = document.querySelector('.menu__body');
-let body = document.querySelector('body')
-    // Adaptive menu
-    menu.addEventListener('click', function(event) {
-        menu.classList.toggle('active');
-        mb.classList.toggle('active');
-        body.classList.add('lock');
-    });
+$('document').ready(function(){
     
+    // Adaptive menu
+    $('.burger-menu').click(function(event) {
+        $('.burger-menu, .menu__body').toggleClass('active');
+        $('body').toggleClass('lock');
+    });
+    // IBg
+    
+
+});
 
 function ibg(){
 
